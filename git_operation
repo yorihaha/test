@@ -23,6 +23,7 @@ git checkout master
 git merge feature1
 不删除分支合并记录的方式提交
 git merge --on-ff -m "add branch" feature1
+git branch -d feature
 
 8.删除
 git rm 1.txt
