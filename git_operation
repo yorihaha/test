@@ -1,0 +1,39 @@
+1.初始化
+git init
+
+2.保存到stage
+git add .
+
+ex: git add 1.txt
+
+3.提交
+git commit -m "一些解释"
+
+4.创建分支
+git checkout -b feature1
+
+5.切换分支
+git branch feature1
+
+6.查看分支
+git branch
+
+7.向msater合并feature1分支
+git branch master
+git merge feature1
+不删除分支合并记录的方式提交
+git merge --on-ff -m "add branch" feature1
+
+8.删除
+git rm 1.txt
+git mv a.txt b.txt
+
+9.回退
+回退工作区:git checkout -- a.txt
+回退stage :git reset HEAD file.txt
+
+10.其他常用命令
+git log
+git log --graph
+git reflog
+git log --graph --pretty=oneline --abbrev-commit
