@@ -19,7 +19,7 @@ git branch feature1
 git branch
 
 7.向msater合并feature1分支
-git branch master
+git checkout master
 git merge feature1
 不删除分支合并记录的方式提交
 git merge --on-ff -m "add branch" feature1
@@ -37,3 +37,11 @@ git log
 git log --graph
 git reflog
 git log --graph --pretty=oneline --abbrev-commit
+
+11.保存临时目录
+git stash
+git stash pop
+|__git stash list
+|__git stash drop
+
+
